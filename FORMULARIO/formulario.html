@@ -1,0 +1,155 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web cajas</title>
+    <link rel="icon" type="image/jpg" href="IMAGENES/favicon.jpg" />
+    <h1>Formulario para hacer un pedido</h1>
+</head>
+
+<body>
+    <form method="post" action="http://formulario/action.php">
+        <fieldset>
+            <legend> Datos personales</legend>
+            <label for="idnombre"> Nombre completo</label><br><input id="idnombre" name="nombre" type="text" required
+                placeholder="Nombre y Apellidos"> <br>
+            <label for="idfecha"> Fecha de nacimiento</label><br>
+            <input id="idfecha" name="fecha" type="date" placeholder="dd/mm/aaaa"> <br>
+            <label for="idpais"> Pais en el que reside</label><br>
+            <input id="idpais" name="pais" type="text"><br>
+            <label for="direccion"> Direccion de envio</label><br>
+            <input id="direccion" name="direccion" type="text" placeholder=" C/Leopoldo Romeo, Nº16 4º 3ª ">
+            <br><label for="idCP"> Codigo postal</label><br>
+            <input id="idCP" name="CP" type="text" placeholder="50002">
+            <br>
+            <label for="user_email">Email:</label><br><input type="email" name="idemail" id="idemail">
+        </fieldset>
+        <h3>OPCIONES DE PEDIDO</h3>
+        <legend>¿Diseño propio?</legend>
+        <label>
+            <input type="radio" name="color" value="color"> Si
+
+        </label>
+        <label>
+            <input type="radio" name="color" value="color"> No
+        </label>
+        <br>
+        <label for="Observaciones"> Si escogio "Si" (Puede adjuntar imagenes via Url)</label> <br>
+        <textarea name="Observaciones" id="Observaciones" cols="55" rows="1"></textarea>
+
+        <br> <br>
+        <h3><strong>Acabados &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Cantidad</strong></h3>
+
+
+        Opciones de acabados:
+
+        <br />
+
+        <input name="idPegatina sin diseño" type="checkbox" />Pegatina sin diseño
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <select name="idPegatina sin diseño">
+
+
+            <optgroup label="cantidad">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+
+            </optgroup>
+
+        </select>
+
+        <br />
+        <input name="idPegatina con diseño" type="checkbox" />Pegatina con diseño
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="idPegatina con diseño">
+
+
+            <optgroup label="cantidad">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+
+            </optgroup>
+
+        </select>
+
+        <br />
+
+        <input name="idImpresion Laser sin diseño" type="checkbox" />Impresion Laser sin diseño
+        &nbsp;&nbsp;&nbsp;
+        <select name="idImpresion Laser sin diseño">
+
+
+            <optgroup label="cantidad">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+
+            </optgroup>
+
+        </select>
+
+        <br />
+
+        <input name="idImpresion Laser con diseño" type="checkbox" />Impresion Laser con diseño
+        &nbsp;&nbsp;
+        <select name="idImpresion Laser con diseño">
+
+
+            <optgroup label="cantidad">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+
+            </optgroup>
+
+        </select>
+
+        </select>
+        <br><br>
+        <h3>Opciones de pago</h3>
+        <select name="Pago">
+
+
+            <optgroup label="Pago">
+
+                <option>Tarjeta</option>
+
+                <option>Paypal</option>
+                <option>Bizum</option>
+
+
+            </optgroup>
+
+        </select>
+        <br><br>
+        <input type="reset" value="Reinicar formulario">
+        <input type="submit" value="Enviar pedido">
+    </form>
+
+</body>
+<footer>
+    <p><a href="../index.html"> PAGINA WEB CAJAS</a></p><br> Pagina diseñada por
+    <br> Diego Navarro
+</footer>
+
+</html>
